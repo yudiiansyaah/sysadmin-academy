@@ -1,0 +1,2 @@
+asyncssh==2.15.0
+asyncio-contextmanager==1.0.0
