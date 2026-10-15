@@ -39,6 +39,10 @@ sysadmin-academy/
 ├── courses.md             # Course content (20 modules)
 └── lab-guide.sh          # Lab exercises
 
+docs/
+└── screenshots/
+    ├── 01-dashboard.png   # Tampilan awal dashboard
+    └── 02-courses.png     # Tampilan daftar course
 ```
 
 ## Tech Stack
@@ -99,6 +103,14 @@ ssh -p 2222 labuser@localhost  # password: labuser123
 ```bash
 docker-compose up -d
 ```
+
+## Screenshots
+
+### Dashboard Tampilan Awal
+![Dashboard](docs/screenshots/01-dashboard.png)
+
+### Daftar Course
+![Courses](docs/screenshots/02-courses.png)
 
 ## Courses
 
