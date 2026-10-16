@@ -1,5 +1,8 @@
 FROM ubuntu:22.04
 
+ARG LAB_USER=labuser
+ARG LAB_PASSWORD
+
 RUN apt-get update && apt-get install -y \
     openssh-server \
     sudo \
@@ -15,9 +18,9 @@ RUN apt-get update && apt-get install -y \
 
 RUN mkdir /run/sshd
 
-RUN useradd -m -s /bin/bash labuser && \
-    echo "labuser:labuser123" | chpasswd && \
-    usermod -aG sudo labuser
+RUN useradd -m -s /bin/bash ${LAB_USER} && \
+    echo "${LAB_USER}:${LAB_PASSWORD}" | chpasswd && \
+    usermod -aG sudo ${LAB_USER}
 
 RUN echo "PermitRootLogin no" >> /etc/ssh/sshd_config && \
     echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
