@@ -39,3 +39,4 @@ frontend/*~
 .DS_Store
 Thumbs.db
 frontend/.vite/
+backend/logs/
