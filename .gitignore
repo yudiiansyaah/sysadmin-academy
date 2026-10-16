@@ -40,3 +40,7 @@ frontend/*~
 Thumbs.db
 frontend/.vite/
 backend/logs/
+
+# Root env (real secrets, never commit)
+.env
+.env.local
