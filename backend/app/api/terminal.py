@@ -25,7 +25,7 @@ async def websocket_terminal(websocket: WebSocket, user_id: int):
             host=settings.LAB_SSH_HOST,
             port=settings.LAB_SSH_PORT,
             username=settings.LAB_SSH_USER,
-            password="labuser123",  # Dari config
+            password=settings.LAB_SSH_PASSWORD,
         )
         
         # Start session

@@ -34,6 +34,7 @@ class Settings(BaseSettings):
     LAB_SSH_HOST: str = Field(default="localhost", description="Host lab machine")
     LAB_SSH_PORT: int = Field(default=22, description="Port SSH lab machine")
     LAB_SSH_USER: str = Field(default="labuser", description="User SSH lab machine")
+    LAB_SSH_PASSWORD: str = Field(default="labuser123", description="Password SSH lab machine")
 
     class Config:
         env_file = ".env"
