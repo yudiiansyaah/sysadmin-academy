@@ -164,7 +164,7 @@ Pull request workflow:
 
 ## License
 
-MIT
+**[MIT License](LICENSE)**
 
 ---
 
